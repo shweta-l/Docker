@@ -1,7 +1,7 @@
-Dockerfile 
+**Dockerfile** 
 - It must starts with a Dockerfile.
 
-File content:
+**File content:**
 
 FROM <image>	      - Defines a base for your image.
 RUN <command>	      - Executes any commands in a new layer on top of the current image and commits the result. RUN also has a shell form for running commands.
@@ -18,19 +18,17 @@ RUN pip install -r requirements.txt
 CMD python app.py
 
 **Build Docker**
-
-docker build -t shweta51193/welcome-app:latest .
-
-docker run -p 127.0.0.1:8000:8000 shweta51193/welcome-app:latest
+- docker build -t shweta51193/welcome-app:latest .
+- docker run -p 127.0.0.1:8000:8000 shweta51193/welcome-app:latest
 
 **Get docker images**
-docker images
+- docker images
 
 **Get Container details**
-docker ps
+- docker ps
 
 **Docker compose**
-create compose file with name - compose.yml 
+- create compose file with name - compose.yml 
 
 compose.yml
 services:
@@ -42,5 +40,5 @@ services:
     image: "redis:alpine"
 
 **Build and run your app with Compose**
-docker compose up
+- docker compose up
 
