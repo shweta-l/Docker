@@ -3,7 +3,7 @@
 
 **File content:**
 
-FROM <image>	      - Defines a base for your image.
+FROM <image>	      - Defines a base for your image. \n
 RUN <command>	      - Executes any commands in a new layer on top of the current image and commits the result. RUN also has a shell form for running commands.
 WORKDIR <directory>	- Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD instructions that follow it in the Dockerfile.
 COPY <src> <dest>	  - Copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>.
